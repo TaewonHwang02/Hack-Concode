@@ -11,7 +11,22 @@ body {
     background-repeat: no-repeat;
 }
 
-.button1 {
+.back {
+    border: none;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 50px;
+}
+
+.register {
     border: none;
     background-color: transparent;
     width: 240px;
@@ -22,16 +37,88 @@ body {
     margin: 2px 1px;
     cursor: pointer;
     position: fixed;
-    left: 40px;
-    top: 630px;
+    left: 73px;
+    top: 703px;
+}
+
+input {
+    padding: 15px 10px;
+    font-size: 14px;
+    width: 330px;
+}
+
+.school {
+    position: fixed;
+    left: 15px;
+    top: 230px;
+}
+
+.email {
+    position: fixed;
+    left: 15px;
+    top: 320px;
+}
+
+.id {
+    position: fixed;
+    left: 15px;
+    top: 410px;
+}
+
+.username {
+    position: fixed;
+    left: 15px;
+    top: 500px;
+}
+
+.password {
+    position: fixed;
+    left: 15px;
+    top: 590px;
+}
+
+.check {
+    position: fixed;
+    left: -120px;
+    top: 670px;
+    width: 30px;
+    height: 30px;
 }
 
 </style>
 
 <body>
-<form action = "home_page.html">
-    <button type = "submit" class = "button1">  </button>
+<form action = "sign_in.html">
+    <button type = "submit" class = "back">  </button>
 </form>
+
+<form action = "sign_in.html">
+    <button type = "submit" class = "register">  </button>
+</form>
+
+<form action="/action_page.php" class = "school">
+    <input type="text" id="school" name="school">
+</form>
+
+<form action="/action_page.php" class = "email">
+    <input type="text" id="email" name="email">
+</form>
+
+<form action="/action_page.php" class = "id">
+    <input type="text" id="id" name="id">
+</form>
+
+<form action="/action_page.php" class = "username">
+    <input type="text" id="username" name="username">
+</form>
+
+<form action="/action_page.php" class = "password">
+    <input type="text" id="password" name="password">
+</form>
+
+<form action="/action_page.php" class = "check">
+    <input type="checkbox" id="check" name="check">
+  </form>
 
 </body>
 
