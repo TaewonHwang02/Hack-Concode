@@ -6,13 +6,51 @@
 </head>
 
 <style>
+
 body {
     background-image: url('group_chat.jpg');
     background-repeat: no-repeat;
 }
+
+.message {
+    position: fixed;
+    left: 50px;
+    top: 740px;
+}
+
+input {
+    padding: 15px 10px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.button1 {
+    border: none;
+    background-color: transparent;
+    width: 240px;
+    height: 300px;
+    padding: 3px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+    position: fixed;
+    left: 73px;
+    top: 433px;
+}
+
 </style>
 
 <body>
+
+<form action="/action_page.php" class = "message">
+    <input type="text" id="message" name="message">
+</form>
+
+<form action = "group_chat_2.html">
+    <button type = "submit" class = "button1">  </button>
+</form>
+
 </body>
 
 </html>
